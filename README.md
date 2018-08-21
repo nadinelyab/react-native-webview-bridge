@@ -1,3 +1,8 @@
+## Note
+This is a fork of [react-native-webview-bridge](https://github.com/alinz/react-native-webview-bridge). I simply forked the repo and changed the way PropTypes is required to use the npm package, then I changed React.createClass to the packaged version create-react-class. Both of these changes were necessary to get the library to work and since the repo is no longer mantained I made the changes myself. You can read more about this issue [here](https://github.com/alinz/react-native-webview-bridge/issues/95).
+
+I do not take credit for any of the code in this repo.
+
 # Looking for Maintainer(s)
 I have been really busy and I can't continue maintaing this repo alone. I would like to ask if anyone wants to help I can grant a permission both on github and npm to start merging a lot of request and dealing with issues.
 
