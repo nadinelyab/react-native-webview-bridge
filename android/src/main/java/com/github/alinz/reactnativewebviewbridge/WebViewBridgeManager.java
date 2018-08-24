@@ -9,7 +9,6 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 
 import java.util.ArrayList;
 import java.util.Map;
-import java.net.URLEncoder;
 
 import javax.annotation.Nullable;
 
@@ -63,8 +62,7 @@ public class WebViewBridgeManager extends ReactWebViewManager {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
             root.evaluateJavascript(javascript, null);
         } else {
-            root.loadUrl("javascript:" + URLEncoder.encode(javascript, "UTF-8"));
-            //root.loadUrl("javascript:" + javascript);
+            root.loadUrl("javascript:" + javascript);
         }
     }
 
